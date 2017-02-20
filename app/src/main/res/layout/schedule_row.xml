@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:src="@drawable/badge"
+        android:layout_height="@dimen/team_logo"
+        android:id="@+id/teamLogo"
+        android:layout_weight="1"
+        android:layout_width="@dimen/team_logo"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/teamLogo"
+        android:layout_centerInParent="true">
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamText" android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:textStyle="normal|bold"></TextView>
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scheduleText" android:layout_toRightOf="@id/teamText"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        tools:textStyle="italic"> </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
